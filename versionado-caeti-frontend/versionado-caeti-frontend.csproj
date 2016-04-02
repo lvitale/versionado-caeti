@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{599C1C7B-182E-496B-B4F6-5E81DF4977D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>versionado_caeti_frontend</RootNamespace>
+    <AssemblyName>versionado-caeti-frontend</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\Disk.png" />
+    <Content Include="images\Download.png" />
+    <Content Include="images\DownloadDoc.png" />
+    <Content Include="images\grid-alt.png" />
+    <Content Include="images\grid-header.png" />
+    <Content Include="images\grid-pgr.png" />
+    <Content Include="images\uai.gif" />
+    <Content Include="images\usuario.png" />
+    <Content Include="pages\core\errorpages.aspx" />
+    <Content Include="pages\core\estado.aspx" />
+    <Content Include="pages\core\home.aspx" />
+    <Content Include="pages\core\tiposDocumento.aspx" />
+    <Content Include="pages\core\usuario.aspx" />
+    <Content Include="pages\master-page\default.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\Add.png" />
+    <Content Include="images\Back.png" />
+    <Content Include="images\Bar Chart.png" />
+    <Content Include="images\Comment.png" />
+    <Content Include="images\Delete.png" />
+    <Content Include="images\Email.png" />
+    <Content Include="images\Exit.png" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\Info.png" />
+    <Content Include="images\Line Chart.png" />
+    <Content Include="images\Load.png" />
+    <Content Include="images\Loading.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\Loguin.gif" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\Modify.png" />
+    <Content Include="images\Next.png" />
+    <Content Include="images\peligro.jpg" />
+    <Content Include="images\Picture.png" />
+    <Content Include="images\Pie Chart.png" />
+    <Content Include="images\Print.png" />
+    <Content Include="images\Profile.png" />
+    <Content Include="images\Save.png" />
+    <Content Include="images\Search.png" />
+    <Content Include="images\Warning.png" />
+    <Content Include="pages\core\documento.aspx" />
+    <Content Include="pages\core\login.aspx" />
+    <Content Include="pages\core\version.aspx" />
+    <Content Include="pages\popup\documentopopup.aspx" />
+    <Content Include="pages\popup\versionpopup.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\documento.aspx.cs">
+      <DependentUpon>documento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\documento.aspx.designer.cs">
+      <DependentUpon>documento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\errorpages.aspx.cs">
+      <DependentUpon>errorpages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\errorpages.aspx.designer.cs">
+      <DependentUpon>errorpages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\estado.aspx.cs">
+      <DependentUpon>estado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\estado.aspx.designer.cs">
+      <DependentUpon>estado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\tiposDocumento.aspx.cs">
+      <DependentUpon>tiposDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\tiposDocumento.aspx.designer.cs">
+      <DependentUpon>tiposDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\usuario.aspx.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\usuario.aspx.designer.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\core\version.aspx.cs">
+      <DependentUpon>version.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\core\version.aspx.designer.cs">
+      <DependentUpon>version.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\master-page\default.Master.cs">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\master-page\default.Master.designer.cs">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\popup\documentopopup.aspx.cs">
+      <DependentUpon>documentopopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\popup\documentopopup.aspx.designer.cs">
+      <DependentUpon>documentopopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\popup\versionpopup.aspx.cs">
+      <DependentUpon>versionpopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\popup\versionpopup.aspx.designer.cs">
+      <DependentUpon>versionpopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\versionado-caeti-core\versionado-caeti-core.csproj">
+      <Project>{b99881a5-0252-4bee-ba68-99ff348b4baa}</Project>
+      <Name>versionado-caeti-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\versionado-caeti-entity\versionado-caeti-entity.csproj">
+      <Project>{df271f7b-ca87-4f1c-b9b3-1d264cf2acc7}</Project>
+      <Name>versionado-caeti-entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53972</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53972/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

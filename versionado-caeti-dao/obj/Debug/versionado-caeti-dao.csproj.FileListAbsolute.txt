@@ -1,0 +1,9 @@
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-dao.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-dao.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-conecotdb.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-entity.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-conecotdb.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\bin\Debug\versionado-caeti-entity.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\obj\Debug\versionado-caeti-dao.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\obj\Debug\versionado-caeti-dao.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-dao\obj\Debug\versionado-caeti-dao.pdb

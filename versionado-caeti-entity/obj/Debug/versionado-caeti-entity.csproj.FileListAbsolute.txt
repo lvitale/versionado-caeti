@@ -1,0 +1,4 @@
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-entity\bin\Debug\versionado-caeti-entity.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-entity\bin\Debug\versionado-caeti-entity.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-entity\obj\Debug\versionado-caeti-entity.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-entity\obj\Debug\versionado-caeti-entity.pdb

@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="versionado_caeti_frontend.pages.master_page._default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+    
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        .link1
+        {
+            height: 19px;
+        }
+        .style1
+        {
+            width: 101px;
+        }
+        .style2
+        {
+            height: 30px;
+            width: 101px;
+        }
+        .style3
+        {
+            height: 28px;
+            width: 101px;
+        }
+        .style4
+        {
+            width: 11px;
+            height: 28px;
+        }
+        #form1
+        {
+            height: 720px;
+        }
+    </style>
+</head>
+<body bgcolor="#ffffff">
+
+    <form id="formulario" runat="server">
+<asp:contentplaceholder id="contenidocabecera" runat="server">
+                   
+      <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div style="text-align: center">
+        <div style="text-align: center">
+            <div style="text-align: center">
+                <table style="width: 750px; height: 48px; background-color: #ffffff;" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="width: 100px; height: 45px;">
+                        <table style="width: 750px; color: white; background-color: gray; height: 27px;" >
+            <tr>
+                <td style="width: 86px; height: 30px">
+                    <asp:Label ID="lblTitleBoutique" runat="server" Text="Versionado de documentos"
+                        Width="464px" Font-Bold="True"></asp:Label></td>
+                <td style="width: 100px; height: 30px">
+                     <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                      <ContentTemplate>
+                    <asp:Label ID="lblMenuPrincipal" runat="server" Text="Menu principal" Width="232px" 
+                        Font-Bold="True"></asp:Label></td>
+                          </ContentTemplate>
+                          </asp:UpdatePanel>
+            </tr>
+        </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="text-align: center">
+            <table style="width: 750px; height: 60px; background-color: #ffffff;" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 65px; height: 50px; border-left-color: white; border-bottom-color: white; border-top-color: white; background-color: #ffffff; border-right-color: white;">
+                    </td>
+                    <td style="width: 171px; height: 76px; background-color: #ffffff;">
+                        </td>
+                    <td style="width: 570px; height: 76px; text-align: center; border-left-color: white; border-bottom-color: white; border-top-color: white; background-color: #ffffff; border-right-color: white;">
+                         <asp:Image ID="Image2" runat="server" Height="62px" ImageUrl="~/images/uai.gif" Width="99%" />
+                    </td>
+                       
+                    <td style="width: 393px; height: 76px; background-color: #ffffff;">
+                    <br />
+                       
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align: center">
+        </div>
+        <table style="width: 750px; height: 1px; background-color: #ffffff;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="left" colspan="2" style="height: 32px; background-color: white; text-align: left; width: 257px;">
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <!-- USER LOGUEADO -->
+                    <asp:Label ID="lblUsuario" runat="server" Font-Bold="True" ForeColor="Black">Usuario :</asp:Label>
+                    <asp:label ID="txtNameUser" runat="server" Visible="false" ForeColor="Green" 
+                         Width="67px" BorderStyle="None"/>
+                    &nbsp;&nbsp;
+                    <!-- LOGOUT -->
+                    
+                        &nbsp;&nbsp;<asp:LinkButton ID="btnLogout" runat="server" 
+                        BorderStyle="None" CssClass="link1" OnClick="btnLogout_Click" Font-Bold="True" CausesValidation="false">Logout</asp:LinkButton>
+                        </td>
+                
+                <td colspan="2" style="height: 32px; background-color: #ffffff; text-align: right">
+                   &nbsp;
+               </td>
+            </tr>
+        </table>
+        <table style="width: 750px; height: 1px; background-color: #ffffff; border-bottom: black thin solid;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td style="width: 81px; height: 16px; text-align: right;" align="right">
+                    </td>
+            </tr>
+        </table>
+        <table style="width: 750px; height: 440px; background-color: white;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 1363px; height: 471px; text-align: left" valign="top">
+                    <div style="text-align: left;">
+                        <table style="left: 32px; position: relative;background-color:gray;font-style:italic;  top: 40px; height: 320px; width: 180px; border-right: navy thin outset; border-top: navy thin outset; border-left: navy thin outset; border-bottom: navy thin outset;" border="0">
+                            <tr>
+                                <td style="width: 11px">
+                                    <asp:ImageButton ID="homeImgBtn" runat="server" ImageUrl="~/images/home.gif" Width="18px" PostBackUrl="~/pages/bussiness/home.aspx"/></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Overline="False" Font-Bold="true" Font-Underline="False" ForeColor="White" NavigateUrl="~/pages/core/home.aspx">Home</asp:HyperLink></td>
+                            </tr>
+                           
+                            <tr>
+                                <td style="width: 11px">
+                                    <asp:ImageButton ID="catalogoImgBtn" runat="server" Height="16px" ImageUrl="~/images/Info.png" Width="16px" PostBackUrl="~/pages/bussiness/catalogo.aspx" /></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Underline="False" Font-Bold="true" ForeColor="White" NavigateUrl="~/pages/core/estado.aspx">Estado</asp:HyperLink></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 11px">
+                                    <asp:ImageButton ID="IB4" runat="server" ImageUrl="~/images/Add.png" Width="18px" /></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="hlRegistrarse" runat="server" NavigateUrl="~/pages/core/documento.aspx" Font-Bold="true" ForeColor="White" Font-Underline="False">Documento</asp:HyperLink></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 11px"><asp:ImageButton ID="IB7" runat="server" ImageUrl="~/images/Add.png"
+                                        Width="18px" /></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="hlMisSolicitudes" runat="server" NavigateUrl="~/pages/core/tiposDocumento.aspx"
+                                        Width="137px" Font-Bold="true" ForeColor="White" Font-Underline="False">Tipos</asp:HyperLink></td>
+                            </tr>
+                             <tr>
+                                <td style="width: 11px"><asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/Add.png"
+                                        Width="18px" /></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/pages/core/usuario.aspx"
+                                        Width="137px" Font-Bold="true" ForeColor="White" Font-Underline="False">Usuario</asp:HyperLink></td>
+                            </tr>
+                             <tr>
+                                <td style="width: 11px">
+                                    <asp:ImageButton ID="IB5" runat="server" ImageUrl="~/images/Loguin.gif" Width="18px" PostBackUrl="~/pages/bussiness/login.aspx" /></td>
+                                <td class="style1">
+                                    <asp:HyperLink ID="hlLoguearse" runat="server" Font-Underline="False" Font-Bold="true" ForeColor="White" NavigateUrl="~/pages/core/login.aspx">Ingresar</asp:HyperLink></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 11px; height: 30px;"></td>
+                                <td class="style2">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 11px; height: 28px">
+                                    </td>
+                                <td class="style3">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="style4">
+                                </td>
+                                <td class="style3">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td style="width: 752px; height: 471px">
+                    <div style="text-align: left">
+                        <table cellpadding="0" cellspacing="0" style="width: 528px; height: 112px">
+                            <tr>
+                                <td align="left" style="width: 523px; height: 439px" valign="top">
+                                    <br />
+                    <asp:Label ID="lblTitulo" runat="server" CssClass="txtSeccion"></asp:Label><br />
+                                    <br />
+    
+        <asp:contentplaceholder id="Contenido" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 750px; color: white; background-color: gray; height: 27px;" 
+            cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 86px; height: 30px">
+                    <asp:Label ID="Label2" runat="server" Text="San Juan 951, Ciudad de Buenos Aires(1414) | Tel-fax (54) 11 4326-4000"
+                        Width="464px"></asp:Label></td>
+                <td style="width: 100px; height: 30px">
+                    <asp:Label ID="Label3" runat="server" Text="Copyright © 2015" Width="232px"></asp:Label></td>
+            </tr>
+        </table>
+</div>
+        <br />
+        <br />
+     </asp:contentplaceholder>
+    </form>
+</body>
+</html>

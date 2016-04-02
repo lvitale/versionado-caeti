@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B99881A5-0252-4BEE-BA68-99FF348B4BAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>versionado_caeti_core</RootNamespace>
+    <AssemblyName>versionado-caeti-core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bussines\DocumentoManager.cs" />
+    <Compile Include="bussines\EstadoManager.cs" />
+    <Compile Include="bussines\TipoManager.cs" />
+    <Compile Include="bussines\UsuarioManager.cs" />
+    <Compile Include="bussines\VersionManager.cs" />
+    <Compile Include="security\Encryptor.cs" />
+    <Compile Include="security\ErrorManager.cs" />
+    <Compile Include="security\LoginManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="security\LogManager.cs" />
+    <Compile Include="security\MailManager.cs" />
+    <Compile Include="security\Session.cs" />
+    <Compile Include="security\UserManager.cs" />
+    <Compile Include="utils\Encriptor.cs" />
+    <Compile Include="utils\StreamUtils.cs" />
+    <Compile Include="utils\StringUtils.cs" />
+    <Compile Include="validator\UserValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\versionado-caeti-conecotdb\versionado-caeti-conecotdb.csproj">
+      <Project>{1c1c059e-acce-4b90-81b6-64feebcfbca4}</Project>
+      <Name>versionado-caeti-conecotdb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\versionado-caeti-dao\versionado-caeti-dao.csproj">
+      <Project>{1089d0bc-7407-4182-a2d2-fef12a75d4dc}</Project>
+      <Name>versionado-caeti-dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\versionado-caeti-entity\versionado-caeti-entity.csproj">
+      <Project>{df271f7b-ca87-4f1c-b9b3-1d264cf2acc7}</Project>
+      <Name>versionado-caeti-entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

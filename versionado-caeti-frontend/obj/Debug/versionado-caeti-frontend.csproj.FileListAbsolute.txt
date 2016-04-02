@@ -1,0 +1,14 @@
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-frontend.dll.config
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-frontend.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-frontend.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-core.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-entity.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-dao.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-conecotdb.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-core.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-entity.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-dao.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\bin\versionado-caeti-conecotdb.pdb
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\obj\Debug\versionado-caeti-frontend.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\obj\Debug\versionado-caeti-frontend.dll
+C:\Users\pc\Desktop\garbarino\facultad\seminario\ejemplo\copia\versionado-documentacion-caeti\versionado-caeti-frontend\obj\Debug\versionado-caeti-frontend.pdb
